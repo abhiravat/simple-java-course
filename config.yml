@@ -1,0 +1,18 @@
+title: Simple-Java
+description: >-
+  This course is designed to make you learn the Java language in as simple as
+  possible manner. 
+template:
+  repo: simple-java-template
+  name: simple-java
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
